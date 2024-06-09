@@ -9,7 +9,7 @@ import HostLayout from "./components/HostLayout.jsx";
 import AuthRequired from "./components/AuthRequired.jsx";
 import Login from "./pages/Login.jsx";
 import Dashboard from "./pages/Host/Dashboard.jsx";
-
+import NotFound from "./pages/NotFound.jsx";
 
 import "../src/server.js";
 
@@ -27,7 +27,9 @@ function App() {
           <Route element={<AuthRequired />}>
             <Route path="host" element={<HostLayout />}>
               <Route index element={<Dashboard />} />
-            </Route></Route>
+            </Route>
+          </Route>
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
