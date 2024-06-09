@@ -1,10 +1,15 @@
 //import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Vans from "./pages/Vans.jsx";
-import VanDetail from "./pages/VanDetail.jsx";
+import Vans from "./pages/Vans/Vans.jsx";
+import VanDetail from "./pages/Vans/VanDetail.jsx";
 import Layout from "./components/Layout.jsx";
+import HostLayout from "./components/HostLayout.jsx";
+import AuthRequired from "./components/AuthRequired.jsx";
+import Login from "./pages/Login.jsx";
+import Dashboard from "./pages/Host/Dashboard.jsx";
+
 
 import "../src/server.js";
 
@@ -17,6 +22,12 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
           <Route path="vans/:id" element={<VanDetail />} />
+          <Route path="login" element={<Login />} />
+
+          <Route element={<AuthRequired />}>
+            <Route path="host" element={<HostLayout />}>
+              <Route index element={<Dashboard />} />
+            </Route></Route>
         </Route>
       </Routes>
     </BrowserRouter>
