@@ -1,9 +1,6 @@
 # DJS08 Project Brief: React Router
 
-🎥 LOOM PRESENTATION LINK: [Here]
-
-
-Are you ready to get stuck into some React Router? For this challenge, you are required to code along with the lecturer from this lesson on Scrimba V1 [VanLife Project Bootstrapping](https://v1.scrimba.com/learn/react/introduction-to-react-router-6-coafa4877a450245212825034) or on Scrimba V2 click the link here [VanLife Project Bootstrapping](https://v2.scrimba.com/advanced-react-c02h/~02d)
+🎥 LOOM PRESENTATION LINK: https://www.loom.com/share/d05b1ce435884e818379798c377df1ef?sid=2a2d5d61-1636-4153-bcc5-fdd54cee2733
 
 ## React Routing Presentation Talking Points
 
